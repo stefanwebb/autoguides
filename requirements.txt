@@ -1,0 +1,6 @@
+pytorch
+numpy
+pystan
+matplotlib
+seaborn
+git+git://github.com/stefanwebb/pyro.git@for_jp
