@@ -1,6 +1,6 @@
 # Improving Automated Variational Inference with Normalizing Flows 
 
-Code for the paper, Webb, et al. *Improving Automated Variational Inference with Normalizing Flows*.
+Code for the paper, Webb et al. *Improving Automated Variational Inference with Normalizing Flows*, 2019.
 
 ## Code
 
@@ -30,6 +30,15 @@ python run_models.py -n {num_epochs} -m {model name} -g {guide name} -lr {Adam l
 eg:
 ```
 python run_models.py -n 1000  -m arm.wells_dist -g AutoDiagonalNormal -lr 0.001  --elbo-particles 10  --results-dir results/ 
+```
+
+To run NUTS,
+```
+python run_nuts.py -m {model} --results-dir {output dir path}
+```
+eg:
+```
+python run_nuts.py -m arm.wells_dist --results-dir results/
 ```
 
 ## Requirements
